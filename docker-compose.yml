@@ -1,0 +1,25 @@
+services:
+    web:
+        build:
+            context: .
+        container_name: Apache
+        ports:
+            - "80:80"
+        volumes:
+            - ./simple-site:/var/www/html
+
+        depends_on:
+            - database
+
+    database:
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: example
+        volumes:
+            - ./simple-site/db:/var/lib/mysql
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080

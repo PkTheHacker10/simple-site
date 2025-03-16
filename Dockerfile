@@ -1,20 +1,16 @@
-FROM ubuntu
+FROM ubuntu:latest
 
-RUN apt-get update 
-COPY entry.sh /.entry.sh
-RUN apt-get install apache2 -y
+RUN apt-get update -y && \
+    apt-get install -y \
+    php \
+    libapache2-mod-php \
+    php-mysql \
+    curl \
+    wget && \
+    rm -rf /var/lib/apt/lists/*
 
- 
-RUN mkdir /var/www/html/mysite
-
-COPY index.php /var/www/html/mysite/index.php
-
-COPY mysite.conf /etc/apache2/sites-available/mysite.conf
-
-RUN a2dissite 000-default.conf
-RUN a2ensite mysite.conf
-
-RUN service apache2 restart
 EXPOSE 80
+COPY simple-site/scripts/entry.sh /.entry.sh
+RUN chmod +x /.entry.sh
 
 CMD ["/.entry.sh"]
