@@ -21,6 +21,6 @@
     </style>
 </head>
 <body>
-    <h1>Hii, welcome to webserver</h1>
+    <h1>Hii, welcome to LAMP Stack using Docker</h1>
 </body>
 </html>
