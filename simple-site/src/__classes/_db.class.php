@@ -31,12 +31,26 @@ class db
 
     public static function select_user($user)
     {
+        $conn = db::get_connection();
         $sql = "SELECT * FROM `users` WHERE `email`='$user' OR `username`='$user' LIMIT 1";
-        $result = db::$connection->query($sql);
+        $result = $conn->query($sql);
         if ($result) {
             return $result;
         } else {
             return null;
+        }
+    }
+    public static function insert_user($name, $username, $email, $phone, $password)
+    {
+
+        $conn = db::get_connection();
+        $sql = "INSERT INTO `users` (`name`, `username`, `email`, `phone`, `password`, `is_verified`)
+VALUES ('$name', '$username', '$email', '$phone', '$password', '0');";
+        $result = $conn->query($sql);
+        if (!$result) {
+            return false;
+        } else {
+            return true;
         }
     }
 }

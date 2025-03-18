@@ -17,4 +17,13 @@ class user
             return false;
         }
     }
+    public static function signup($name, $username, $email, $phone, $password)
+    {
+        $result = db::insert_user($name, $username, $email, $phone, $password);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
 }
