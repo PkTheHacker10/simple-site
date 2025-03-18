@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:11-slim
 
 RUN apt-get update -y && \
     apt-get install -y \
@@ -7,7 +7,8 @@ RUN apt-get update -y && \
     php-mysql \
     curl \
     wget && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    apt-get clean
 
 EXPOSE 80
 COPY simple-site/scripts/entry.sh /.entry.sh
