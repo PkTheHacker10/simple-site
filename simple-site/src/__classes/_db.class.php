@@ -8,8 +8,9 @@ class db
         $servername = "database";
         $username = "root";
         $password = "example";
+        $db = "lamp";
 
-        $conn = new mysqli($servername, $username, $password);
+        $conn = new mysqli($servername, $username, $password, $db);
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -21,12 +22,21 @@ class db
     {
         if (db::$connection == null) {
             $conn = db::create_connection();
-            print("Creating New connection");
             db::$connection = $conn;
             return $conn;
         } else {
-            print("Returning Old connection");
             return db::$connection;
+        }
+    }
+
+    public static function select_user($user)
+    {
+        $sql = "SELECT * FROM `users` WHERE `email`='$user' OR `username`='$user' LIMIT 1";
+        $result = db::$connection->query($sql);
+        if ($result) {
+            echo "User Found";
+        } else {
+            echo "User Not Found";
         }
     }
 }
