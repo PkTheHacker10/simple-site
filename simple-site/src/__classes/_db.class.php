@@ -34,9 +34,9 @@ class db
         $sql = "SELECT * FROM `users` WHERE `email`='$user' OR `username`='$user' LIMIT 1";
         $result = db::$connection->query($sql);
         if ($result) {
-            echo "User Found";
+            return $result;
         } else {
-            echo "User Not Found";
+            return null;
         }
     }
 }

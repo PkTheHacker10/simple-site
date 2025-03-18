@@ -1,8 +1,18 @@
 <?php
+
+use LDAP\Result;
+
 include_once '../libs/__loader.php';
 if (isset($_POST["email"]) and isset($_POST["pass"])) {
     $email = $_POST["email"];
     $pass = $_POST["pass"];
+    $database_connection = db::get_connection();
+    $result = db::select_user($email);
+    if ($result) {
+        print("User Found");
+    } else {
+        print("User Not Found");
+    }
 }
 
 ?>
