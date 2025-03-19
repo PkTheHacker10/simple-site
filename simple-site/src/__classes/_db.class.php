@@ -5,6 +5,7 @@ class db
     public static $connection = null;
     private static function create_connection()
     {
+        # TODO: change it with env
         $servername = "database";
         $username = "root";
         $password = "example";
