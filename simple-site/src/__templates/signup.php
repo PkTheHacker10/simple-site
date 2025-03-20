@@ -1,5 +1,5 @@
-<body class="relative bg-[url('img/background.jpg')] bg-fixed bg-no-repeat bg-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-45 backdrop-blur-md"></div>
+<body class="relative bg-[url('img/bg.jpg')] bg-fixed bg-no-repeat bg-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-65 backdrop-blur-md"></div>
 
     <div class="relative flex items-center justify-center min-h-screen">
         <div class="rounded-lg w-100  border-white/20 shadow-lg">

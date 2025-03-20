@@ -1,7 +1,18 @@
-<?php
-// if (isset($_SESSION["auth_token"])) {
-// } else {
+<!DOCTYPE html>
+<html lang="en">
 
-// }
-include_once '../libs/__loader.php';
-loadcontent("home");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-site | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<?php
+
+    include_once '../libs/__loader.php';
+    loadcontent("home");
+?>
+</body>
+</html>
+
+

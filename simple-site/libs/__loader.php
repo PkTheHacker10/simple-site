@@ -3,6 +3,7 @@
 include_once '../src/__classes/_db.class.php';
 include_once '../src/__classes/_auth.class.php';
 
+session_start();
 
 function loadcontent($template_name)
 {

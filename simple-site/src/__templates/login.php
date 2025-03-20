@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple-site | Login</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="relative bg-[url(img/background.jpg)] bg-fixed bg-no-repeat bg-cover ">
-    <div class="absolute inset-0 bg-black bg-opacity-45 backdrop-blur-md brightness-10"></div>
+<body class="relative bg-[url(img/bg.jpg)] bg-fixed bg-no-repeat bg-cover ">
+    <div class="absolute inset-0 bg-black bg-opacity-65 backdrop-blur-md brightness-10"></div>
     <div class="relative flex items-center justify-center min-h-screen ">
         <div class="rounded-lg p-8 w-96">
             <h2 class="text-2xl text-white font-bold text-center font-mono">SIMPLE-SITE <br>LOGIN</h2>
@@ -29,5 +19,3 @@
     </div>
 
 </body>
-
-</html>
