@@ -18,13 +18,13 @@
     <!-- Blur Overlay -->
     <div class="fixed inset-0 backdrop-blur-md z-0"></div>
     <div class="relative">
-        <?php 
+        <?php
         loadcontent("nav");
         loadcontent("heading");
         loadcontent("blog");
         ?>
     </div>
-        
+
 
 </body>
 

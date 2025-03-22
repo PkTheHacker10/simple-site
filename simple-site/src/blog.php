@@ -17,14 +17,10 @@
 <body class="bg-[url('img/bg.jpg')] bg-fixed bg-no-repeat bg-cover min-h-screen">
     <!-- Blur Overlay -->
     <div class="fixed inset-0 backdrop-blur-md z-0"></div>
-    <div class="relative">
-        <?php 
-        loadcontent("nav");
-        loadcontent("blog");
-        ?>
-    </div>
-        
-
+    <?php
+    loadcontent("nav");
+    loadcontent("blog");
+    ?>
 </body>
 
 </html>

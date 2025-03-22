@@ -12,18 +12,19 @@
 
     ?>
 </head>
+
 <body class="bg-[url('img/bg.jpg')] bg-fixed bg-no-repeat bg-cover min-h-screen">
     <!-- Blur Overlay -->
     <div class="fixed inset-0 backdrop-blur-md z-0"></div>
     <div class="relative">
-        <?php 
+        <?php
         loadcontent("nav");
         loadcontent("heading");
         loadcontent("blog");
         if (!empty($_SESSION['login_status'])): ?>
             <div id="alert" class="fixed bottom-7 px-4 pt-5 right-5 py-2 rounded-lg">
-                <?php 
-                loadcontent('login-s-alert'); 
+                <?php
+                loadcontent('alerts/login-s-alert');
                 unset($_SESSION['login_status']);
                 ?>
 
@@ -32,10 +33,9 @@
     </div>
     <script>
         setTimeout(() => {
-            document.getElementById('alert').style.display='none';
+            document.getElementById('alert').style.display = 'none';
         }, 3000);
     </script>
 </body>
+
 </html>
-
-

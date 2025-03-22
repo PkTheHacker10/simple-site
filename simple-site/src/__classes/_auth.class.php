@@ -26,4 +26,10 @@ class auth
             return false;
         }
     }
+    public static function logout()
+    {
+        unset($_SESSION['auth_token']);
+        header("Location: login.php");
+    }
+
 }

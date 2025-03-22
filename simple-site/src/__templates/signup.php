@@ -8,31 +8,44 @@
                 <div class="grid grid-cols-2 gap-6">
                     <div>
                         <label class="block text-gray-200">Name</label>
-                        <input type="text" class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name" name="name" value="" required>
+                        <input type="text"
+                            class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your name" name="name" value="" required>
                     </div>
                     <div>
                         <label class="block text-gray-200">Username</label>
-                        <input type="text" class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your username" name="username" value="" required>
+                        <input type="text"
+                            class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your username" name="username" value="" required>
                     </div>
                     <div>
                         <label class="block text-gray-200">Email</label>
-                        <input type="email" class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" name="email" value="" required>
+                        <input type="email"
+                            class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your email" name="email" value="" required>
                     </div>
                     <div>
                         <label class="block text-gray-200">Phone Number</label>
-                        <input type="text" class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your phone number" name="phone" value="" required>
+                        <input type="text"
+                            class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your phone number" name="phone" value="" required>
                     </div>
                     <div>
                         <label class="block text-gray-200">Password</label>
-                        <input type="password" class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your password" name="password" value="" required>
+                        <input type="password"
+                            class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your password" name="password" value="" required>
                     </div>
                     <div>
                         <label class="block text-gray-200">Retype Password</label>
-                        <input type="password" class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Retype your password" name="rpassword" value="" required>
+                        <input type="password"
+                            class="w-full px-4 py-2 mt-2 border rounded-lg placeholder-gray-400 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Retype your password" name="rpassword" value="" required>
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-blue-500 text-white py-2 mt-6 rounded-lg hover:bg-blue-600">Sign Up</button>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 mt-6 rounded-lg hover:bg-blue-600">Sign
+                    Up</button>
             </form>
             <p class="mt-4 text-center">Already have an account? <a href="login.php" class="text-blue-400">Login</a></p>
         </div>
