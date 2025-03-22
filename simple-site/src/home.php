@@ -20,11 +20,11 @@
         loadcontent("nav");
         loadcontent("heading");
         loadcontent("blog");
-        if (!empty($_SESSION['login_success'])): ?>
+        if (!empty($_SESSION['login_status'])): ?>
             <div id="alert" class="fixed bottom-7 px-4 pt-5 right-5 py-2 rounded-lg">
                 <?php 
                 loadcontent('login-s-alert'); 
-                unset($_SESSION['login_success']);
+                unset($_SESSION['login_status']);
                 ?>
 
             </div>

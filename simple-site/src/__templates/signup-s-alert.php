@@ -4,6 +4,6 @@
   </svg>
   <span class="sr-only">Info</span>
   <div>
-    <span class="font-medium">Success alert!</span>
+    <span class="font-medium"><?php print($_SESSION['signup_status'])?></span>
   </div>
 </div>

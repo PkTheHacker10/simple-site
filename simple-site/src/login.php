@@ -20,7 +20,7 @@ if (isset($_POST["email"]) and isset($_POST["pass"])) {
     $login_result = auth::login($results, $pass);
     if ($login_result) {
         $_SESSION['auth_token']="token1234";
-        $_SESSION['login_success']="true";
+        $_SESSION['login_status']="Login successfully";
         header("Location: home.php");
     } else {
         print("Login not successfull");
@@ -31,7 +31,7 @@ if(isset($_SESSION['signup_status'])){
     <div id="signup-alert" class="fixed bottom-7 right-5 px-4 pt-5 py-2 rounded-lg z-50">
     <?php 
         loadcontent('signup-s-alert'); 
-        #unset($_SESSION['signup_status']);
+        unset($_SESSION['signup_status']);
     ?>
 
 </div>
