@@ -9,7 +9,6 @@ if (isset($_POST["name"]) and isset($_POST["username"]) and isset($_POST["email"
     $retype_password = $_POST["rpassword"];
     $signup_result = auth::signup($name, $username, $email, $phone, $password);
     if ($signup_result) {
-        print("Signup success");
         header("Location: login.php");
     } else {
         print("Signup Failed");
@@ -25,7 +24,7 @@ if (isset($_POST["name"]) and isset($_POST["username"]) and isset($_POST["email"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple-site | Signup</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <?php

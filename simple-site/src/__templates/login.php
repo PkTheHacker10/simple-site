@@ -1,5 +1,5 @@
-<body class="relative bg-[url(img/bg.jpg)] bg-fixed bg-no-repeat bg-cover ">
-    <div class="absolute inset-0 bg-black bg-opacity-65 backdrop-blur-md brightness-10"></div>
+<body class="bg-[url(/img/bg.jpg)] bg-no-repeat bg-cover text-white ">
+    <div class="absolute inset-0 backdrop-blur-md"></div>
     <div class="relative flex items-center justify-center min-h-screen ">
         <div class="rounded-lg p-8 w-96">
             <h2 class="text-2xl text-white font-bold text-center font-mono">SIMPLE-SITE <br>LOGIN</h2>
