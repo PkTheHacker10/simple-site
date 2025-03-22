@@ -8,7 +8,9 @@ if (isset($_POST["name"]) and isset($_POST["username"]) and isset($_POST["email"
     $password = $_POST["password"];
     $retype_password = $_POST["rpassword"];
     $signup_result = auth::signup($name, $username, $email, $phone, $password);
+
     if ($signup_result) {
+        $_SESSION['signup_status']="Account created successfully";
         header("Location: login.php");
     } else {
         print("Signup Failed");
@@ -16,20 +18,26 @@ if (isset($_POST["name"]) and isset($_POST["username"]) and isset($_POST["email"
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple-site | Signup</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <?php
+        include_once '../libs/__loader.php';
+        ?>
+    </head>
+    <div class="relative">
+        <?php
+            loadcontent("signup");
+        ?>
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple-site | Signup</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-
-<?php
-include_once '../libs/__loader.php';
-loadcontent("signup");
-?>
-
+    <script>
+        setTimeout(() => {
+                document.getElementById('alert').style.display='none';
+            }, 3000);
+    </script>
 </html>

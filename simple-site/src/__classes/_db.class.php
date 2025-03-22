@@ -49,6 +49,7 @@ class db
 VALUES ('$name', '$username', '$email', '$phone', '$password', '0');";
         $result = $conn->query($sql);
         if (!$result) {
+            print($conn->error);
             return false;
         } else {
             return true;

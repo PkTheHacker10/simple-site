@@ -4,6 +4,6 @@
   </svg>
   <span class="sr-only">Info</span>
   <div>
-    <span class="font-medium">Success alert!</span> Change a few things up and try submitting again.
+    <span class="font-medium">Success alert!</span>
   </div>
 </div>
