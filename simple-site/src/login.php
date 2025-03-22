@@ -21,6 +21,7 @@ if (isset($_POST["email"]) and isset($_POST["pass"])) {
     if ($login_result) {
         $_SESSION['auth_token'] = "token1234";
         $_SESSION['login_status'] = "Login successfully";
+        $_SESSION['username'] = $login_result;
         header("Location: home.php");
     } else {
         print ("Login not successfull");

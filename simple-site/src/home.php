@@ -18,9 +18,10 @@
     <div class="fixed inset-0 backdrop-blur-md z-0"></div>
     <div class="relative">
         <?php
-        loadcontent("nav");
-        loadcontent("heading");
-        loadcontent("blog");
+        loadcontent("components/nav");
+        loadcontent("components/heading");
+        loadcontent("components/blog");
+        loadcontent("components/footer");
         if (!empty($_SESSION['login_status'])): ?>
             <div id="alert" class="fixed bottom-7 px-4 pt-5 right-5 py-2 rounded-lg">
                 <?php

@@ -11,7 +11,7 @@ class auth
             }
             $user_pass = auth::$user_data["password"];
             if ($password == $user_pass) {
-                return true;
+                return auth::$user_data['username'];
             }
         } else {
             return false;
