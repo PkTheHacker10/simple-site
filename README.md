@@ -137,6 +137,6 @@ A beginner-friendly **LAMP (Linux, Apache, MySQL, PHP) stack** running inside Do
 ---
 
 ### **🔥 Final Notes**  
-This documentation provides a clear, structured **overview** of simple **LAMP project**, making it easier to understand, maintain, and share.This is only to make my learning as documented and i'm also not that much good developer but i can develope sites and im still learing ,so **if i need improments,issues or tips to make it more flexible ,reusable please let me know .It will help me to imporve myself**.Thank you   
+This documentation provides a clear, structured **overview** of simple **LAMP project**, making it easier to understand, maintain, and share.This is only to make my learning as documented and i'm also not that much good developer but i can develop sites and im still learing ,so **if i need improments,issues or tips to make it more flexible ,reusable please let me know .It will help me to imporve myself**.Thank you   
 
 
