@@ -16,7 +16,7 @@
                     <li><a href="home.php" class="block py-2 px-3 hover:text-blue-500">Home</a></li>
                     <li><a href="#" class="block py-2 px-3 hover:text-blue-500">About</a></li>
                     <li><a href="blog.php" class="block py-2 px-3 hover:text-blue-500">Blogs</a></li>
-                    <?php if ($_SESSION['auth_token']) { ?>
+                    <?php if (isset($_SESSION['auth_token'])) { ?>
                         <li><a href="#"
                                 class="block py-2 px-3 hover:text-blue-500 data-dropdown-toggle=dropdown">Account</a></li>
                     <?php } else { ?>

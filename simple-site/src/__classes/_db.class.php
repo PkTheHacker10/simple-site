@@ -5,11 +5,11 @@ class db
     public static $connection = null;
     private static function create_connection()
     {
-        # TODO: change it with env
-        $servername = "database";
-        $username = "root";
-        $password = "example";
-        $db = "lamp";
+        $database_config_data = get_env("database");
+        $servername = $database_config_data["servername"];
+        $username = $database_config_data["username"];
+        $password = $database_config_data["password"];
+        $db = $database_config_data["db"];
 
         $conn = new mysqli($servername, $username, $password, $db);
 
@@ -49,7 +49,7 @@ class db
 VALUES ('$name', '$username', '$email', '$phone', '$password', '0');";
         $result = $conn->query($sql);
         if (!$result) {
-            print($conn->error);
+            print ($conn->error);
             return false;
         } else {
             return true;
