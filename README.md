@@ -19,13 +19,13 @@ A beginner-friendly **LAMP (Linux, Apache, MySQL, PHP) stack** running inside Do
     ├── config
     │   ├── env.json
     │   └── mysite.conf
-    ├── db
+    ├── db                       # Folder that mounted for Database storage in host machine 
     |
     ├── libs
     │   └── __loader.php
     ├── scripts
     │   └── entry.sh
-    └── src
+    └── src                      # Folder that mounted for src files in host machine to make it easy to edit. 
         ├── blog.php
         ├── __classes
         │   ├── _auth.class.php  # Handles authentication functions
