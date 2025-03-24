@@ -69,8 +69,8 @@ A beginner-friendly **LAMP (Linux, Apache, MySQL, PHP) stack** running inside Do
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/your-repo/simple-lamp
-   cd simple-lamp
+   git clone https://github.com/PkTheHacker10/simple-site.git
+   cd simple-site
    ```
 
 2. Start the Docker containers
@@ -88,7 +88,7 @@ A beginner-friendly **LAMP (Linux, Apache, MySQL, PHP) stack** running inside Do
 4. To stop the containers
 
    ```bash
-   docker-compose down
+   sudo docker-compose down
    ```
 
 ---
